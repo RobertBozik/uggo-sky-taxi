@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         else
         {
             // Spawn new passenger
-            PassengerSpawner spawner = FindFirstObjectByType<PassengerSpawner>();
+            PassengerSpawner spawner = FindAnyObjectByType<PassengerSpawner>();
             if (spawner != null) spawner.SpawnPassenger();
         }
     }
